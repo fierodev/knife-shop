@@ -29,9 +29,7 @@ function Calendar() {
     for(var y=gettingDay; y>=0;y--){
         numbersOfPreviousDate += `<div>${lastDayOfPreviouslyMonth - y}</div>`;
     };
-    // for(var r=1; r<=lastDayOfMonth;r++){
-    //     numbersOfDate += `<div>${r}</div>`;
-    // };
+   
 
     for(var i=1; i<=lastDayOfMonth;i++){
         if(i === new Date().getDate() && date.getMonth() === new Date().getMonth()){
@@ -42,11 +40,6 @@ function Calendar() {
     };
 
     let allDays = numbersOfPreviousDate + numbersOfDate;
-
-
-
-    console.log(lastDayOfPreviouslyMonth)
-    
 
 
     return (
