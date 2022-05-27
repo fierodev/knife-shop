@@ -1,15 +1,17 @@
 import React from 'react';
 import Sidebar from '../Sidebar/Sidebar';
 import '../App.css';
+import CardLayout from './CardLayout';
 
 function Main() {
   return (
     <div className='Sidebar-block'>
         <Sidebar />
-        <div>
-           Some Context
+        <div className='ms-3 mt-3'>
+          <CardLayout />
         </div>
-         </div>
+        
+    </div>
   )
 }
 
