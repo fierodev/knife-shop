@@ -1,14 +1,15 @@
 import React from 'react'
 
-function CardLayout() {
+function CardLayout( {name, image, description} ) {
+
   return (
 
-    <div className="card" style={{width:"30rem"}}>
-        {/* <img src="..." className="card-img-top" alt="..." /> */}
-        <div className="card-body">
-            <h5 className="card-title">Card title</h5>
-            <p className="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-            <a href="#" className="btn btn-primary">Go somewhere</a>
+    <div className="card ms-1 mt-1" style={{width:"30rem"}}>
+        <div className="card-body ">
+            <h5 className="card-title">{name}</h5>
+            <img className="w-50" src={image} />
+            <p className="card-text">{description}</p>
+            <a href="#" className="btn btn-primary">To buy</a>
         </div>
     </div>
   )
