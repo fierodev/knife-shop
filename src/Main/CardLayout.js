@@ -15,4 +15,4 @@ function CardLayout( {name, image, description} ) {
   )
 }
 
-export default CardLayout
+export default CardLayout;
