@@ -1,23 +1,23 @@
 import './App.css';
-import Header from './Header/Header';
-import Main from './Main/Main';
-import Footer from './Footer/Footer';
 
-import "primereact/resources/themes/lara-light-indigo/theme.css"; 
-import "primereact/resources/primereact.min.css";
-import "primeicons/primeicons.css";
-import Calendar from './Calendar/Calendar';
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+import HomePage from './HomePage/HomePage';
+import LoginPage from './LoginPage/LoginPage';
+
 
 
 
 function App() {
   return (
-    <div className="App">
-      {/* <Calendar /> */}
-      <Header />
-      <Main />
-      <Footer />
-    </div>
+     <BrowserRouter>
+          <Routes>
+            <Route path='/' element={ <HomePage />} />
+            <Route path='/login' element={ <LoginPage />} />
+            
+          </Routes>
+        
+     </BrowserRouter>
+    
   );
 }
 

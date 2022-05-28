@@ -28,14 +28,6 @@ function Header(){
                     </div>
                 </div>
             </nav>
-            {/* <div className="container hero">
-                <div className="row">
-                    <div className="col-md-8 offset-md-2">
-                        <h1 className="text-center">The Truth is out there.</h1>
-                        <div className="embed-responsive embed-responsive-16by9"><iframe className="embed-responsive-item" src="https://www.youtube.com/embed/hAAlDoAtV7Y" frameBorder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe></div>
-                    </div>
-                </div>
-            </div> */}
         </div>
     )
 };

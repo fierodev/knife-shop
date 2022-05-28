@@ -16,4 +16,4 @@
   }
 ];
 
-export default arrowOfObjects;
+export default arrowOfObjects
