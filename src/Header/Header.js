@@ -1,8 +1,14 @@
 import '../App.css';
 import React, { useState, useRef } from 'react';
+import { Link } from "react-router-dom";
 
 
 function Header(){
+
+    const [searchValue, SetSearchValue] = useState('');
+
+   
+    console.log('searchValue=>',searchValue)
     
 
     return(
@@ -18,11 +24,11 @@ function Header(){
                         </ul>
                        <div className="w-25 me-5"></div>
                         <form className="form-inline mr-auto col-sm-4" target="_self">
-                            <input type="search" className="form-control form-control-dark " placeholder="Search..." aria-label="Search"></input>
+                            <input type="search" className="form-control form-control-dark " placeholder="Search..." onChange={(event) => { SetSearchValue(event.currentTarget.value);}} aria-label="Search"></input>
                         </form>
                          <div className="p-2"></div>
                         <span className="navbar-text">
-                            <a href="#" className="login">Log In</a>
+                            <Link to='/login' className="login">Log In</Link>
                         </span>
                         <a className="btn btn-light action-button" role="button" href="#">Sign Up</a>
                     </div>
