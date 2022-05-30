@@ -2,13 +2,14 @@ import React from 'react';
 import Sidebar from '../Sidebar/Sidebar';
 import '../App.css';
 import CardLayout from './CardLayout';
-import arrowOfObjects from './store';
 
-function Main() {
-   const getObjects = arrowOfObjects.map(e=>{
+function Main(name) {
+
+   const getObjects = name.name.map(e=>{
      return e
     });
- 
+
+  // console.log('main name=>', getObjects);
 
 
   return (
