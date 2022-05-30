@@ -14,18 +14,18 @@ import ContextSearch from "./context";
 
 
 
-function HomePage( name ) {
+function HomePage( name, category ) {
 
   const [searchValue, SetSearchValue] = useState('');
+  const [knives, setKnives] = useState([]);
 
-  let exists = name.name.filter(elem => elem.name.includes(searchValue));
+  let existsSearchValue = name.name.filter(elem => elem.name.includes(searchValue) && elem.category.includes(knives));
   
-
   return (
-    <ContextSearch.Provider value={{searchValue, SetSearchValue}}>
+    <ContextSearch.Provider value={{searchValue, SetSearchValue, knives, setKnives}}>
     <div className="App">       
         <Header />
-        <Main key={name.name} name={exists} />
+        <Main key={name.name} name={existsSearchValue} />
         <Footer />
     </div>
     </ContextSearch.Provider>
