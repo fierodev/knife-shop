@@ -5,6 +5,7 @@ import { useState, useEffect } from 'react';
 import HomePage from './HomePage/HomePage';
 import LoginPage from './LoginPage/LoginPage';
 import arrowOfObjects from './Main/store';
+import NewTool from './NewTool/NewTool';
 
 
 
@@ -22,6 +23,7 @@ function App() {
           <Routes>
             <Route path='/'  element={ <HomePage key={getNameObject} name={getNameObject} category={getCategoryObject}/>} />
             <Route path='/login' element={ <LoginPage />} />
+            <Route path='/newtool' element={ <NewTool />} />
           </Routes>
      </BrowserRouter>
     

@@ -15,8 +15,9 @@ function Header(){
             <nav className="navbar navbar-dark navbar-expand-md navigation-clean-search">
                 <div className="container"><a className="navbar-brand" href="#">Knifes shop</a><button className="navbar-toggler" data-toggle="collapse" data-target="#navcol-1"><span className="sr-only">Toggle navigation</span><span className="navbar-toggler-icon"></span></button>
                     <div className="collapse navbar-collapse" id="navcol-1">
+                        <Link to='/newtool' className="nav-item" role="presentation"></Link>
                         <ul className="nav navbar-nav">
-                            <li className="nav-item" role="presentation"><a className="nav-link" href="#">Link</a></li>
+                            <li><Link to='/newtool' className="nav-link" role="presentation">New Tool</Link></li>
                             <li className="dropdown"><a className="dropdown-toggle nav-link dropdown-toggle" data-toggle="dropdown" aria-expanded="false" href="#">Dropdown </a>
                                 <div className="dropdown-menu" role="menu"><a className="dropdown-item" role="presentation" href="#">First Item</a><a className="dropdown-item" role="presentation" href="#">Second Item</a><a className="dropdown-item" role="presentation" href="#">Third Item</a></div>
                             </li>
