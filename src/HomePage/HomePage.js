@@ -14,19 +14,18 @@ import ContextSearch from "./context";
 
 
 
-function HomePage( name) {
-
- 
+function HomePage( name ) {
 
   const [searchValue, SetSearchValue] = useState('');
-  console.log('searchValue', searchValue);
 
+  let exists = name.name.filter(elem => elem.name.includes(searchValue));
+  
 
   return (
     <ContextSearch.Provider value={{searchValue, SetSearchValue}}>
     <div className="App">       
         <Header />
-        <Main key={name.name} name={name.name} />
+        <Main key={name.name} name={exists} />
         <Footer />
     </div>
     </ContextSearch.Provider>
