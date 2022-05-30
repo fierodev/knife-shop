@@ -1,20 +1,15 @@
 import '../App.css';
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, useContext } from 'react';
 import { Link } from "react-router-dom";
+import ContextSearch from '../HomePage/context'
 
-let getSearchValue ='no work';
 
 function Header(){
 
-    let [searchValue, SetSearchValue] = useState('work');
-        getSearchValue = searchValue;
-//      useEffect(() => {
-  
- 
-//   });
-    
-    // console.log("getSearchValue", getSearchValue);
+    let { searchValue, SetSearchValue } = useContext(ContextSearch);
 
+
+       
     return(
              <div className="header-dark">
             <nav className="navbar navbar-dark navbar-expand-md navigation-clean-search">
@@ -42,6 +37,5 @@ function Header(){
     )
 };
 
- 
-export { getSearchValue };
+
 export default Header;
