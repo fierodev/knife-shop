@@ -2,14 +2,13 @@ import '../App.css';
 import React, { useState, useEffect, useContext } from 'react';
 import { Link } from "react-router-dom";
 import ContextSearch from '../HomePage/context'
+import { Dropdown, DropdownButton } from 'react-bootstrap';
 
 
 function Header(){
 
     let { searchValue, SetSearchValue } = useContext(ContextSearch);
 
-
-       
     return(
              <div className="header-dark">
             <nav className="navbar navbar-dark navbar-expand-md navigation-clean-search">
@@ -18,7 +17,12 @@ function Header(){
                         <Link to='/newtool' className="nav-item" role="presentation"></Link>
                         <ul className="nav navbar-nav">
                             <li><Link to='/newtool' className="nav-link" role="presentation">New Tool</Link></li>
-                            <li className="dropdown"><a className="dropdown-toggle nav-link dropdown-toggle" data-toggle="dropdown" aria-expanded="false" href="#">Dropdown </a>
+                            <li className="dropdown">
+                                    <DropdownButton id="dropdown-variants-secondary" variant="secondary" title="Dropdown">
+                                    <Dropdown.Item href="#/action-1">Action</Dropdown.Item>
+                                    <Dropdown.Item href="#/action-2">Another action</Dropdown.Item>
+                                    <Dropdown.Item href="#/action-3">Something else</Dropdown.Item>
+                                    </DropdownButton>
                                 <div className="dropdown-menu" role="menu"><a className="dropdown-item" role="presentation" href="#">First Item</a><a className="dropdown-item" role="presentation" href="#">Second Item</a><a className="dropdown-item" role="presentation" href="#">Third Item</a></div>
                             </li>
                         </ul>
@@ -30,7 +34,7 @@ function Header(){
                         <span className="navbar-text">
                             <Link to='/login' className="login">Log In</Link>
                         </span>
-                        <a className="btn btn-light action-button" role="button" href="#">Sign Up</a>
+                        <a className="btn btn-light action-button"  role="button" href="#">Sign Up</a>
                     </div>
                 </div>
             </nav>
