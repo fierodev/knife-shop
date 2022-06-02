@@ -2,6 +2,7 @@ import React, { useState, useContext } from 'react';
 import { Checkbox } from 'primereact/checkbox';
 import Calendar from '../Calendar/Calendar';
 import ContextSearch from '../HomePage/context'
+import WeatherAPI from '../Calendar/WeatherAPI';
 
 function Sidebar() {
 
@@ -43,6 +44,7 @@ let { knives, setKnives } = useContext(ContextSearch);
     </div>
     <img src='https://imageio.forbes.com/specials-images/imageserve/619757918/U-S--Army-Ranger/960x0.jpg?fit=bounds&format=jpg&width=960' alt='soldier' style={{width:"100%", marginTop:'20px'}}></img>
      <Calendar />
+     <WeatherAPI />
     </div>
               
   )
