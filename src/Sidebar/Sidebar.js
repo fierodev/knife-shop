@@ -42,9 +42,10 @@ let { knives, setKnives } = useContext(ContextSearch);
                     <label style={{marginLeft:'20px'}}  htmlFor="city4">Collectible knives</label>
                 </div>
     </div>
-    <img src='https://imageio.forbes.com/specials-images/imageserve/619757918/U-S--Army-Ranger/960x0.jpg?fit=bounds&format=jpg&width=960' alt='soldier' style={{width:"100%", marginTop:'20px'}}></img>
-     <Calendar />
+    {/* <img src='https://imageio.forbes.com/specials-images/imageserve/619757918/U-S--Army-Ranger/960x0.jpg?fit=bounds&format=jpg&width=960' alt='soldier' style={{width:"100%", marginTop:'20px'}}></img> */}
      <WeatherAPI />
+     <Calendar />
+     
     </div>
               
   )

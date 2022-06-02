@@ -7,7 +7,7 @@
 div.widget1 {
     font-family: 'Roboto', sans-serif;
     overflow: hidden;
-    background: #a8a4a4;  
+    /* background: #a8a4a4;   */
     margin-top: 20px; 
     max-height: 300px;
 }
@@ -17,7 +17,7 @@ div.widget {
     width: 30rem;
     height: 125px;
     margin: 60px auto;
-    margin-top:40px;
+    margin-top:-20px;
     background-color: #fcfdfd;
     border-radius: 9px;
     padding: 25px;

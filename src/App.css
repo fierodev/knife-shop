@@ -78,14 +78,14 @@ a {
 }
 
 .calendar {
-  background-color: aquamarine;
+  background-color: rgb(165, 167, 166);
   /* justify-content: center; */
   width: 30rem;
 }
 
 .calendar-today {
   display: block;
-  background-color: rgb(165, 127, 255);
+  background-color: rgb(182, 182, 185);
 }
 
 .calendar-today-month {
@@ -116,7 +116,7 @@ a {
 }
 
 .calendar-dates div {
-  background-color: rgb(130, 130, 230);
+  background-color: rgb(238, 238, 241);
   border: 0.1rem solid gray;
   width: calc(100% / 7);
   display: flex;
@@ -125,7 +125,7 @@ a {
 }
 
 .today div {
-  background-color: rgb(220, 241, 23);
+  background-color: rgb(183, 194, 83);
   border: 0.1rem solid gray;
   width: calc(100% / 7);
   display: flex;
