@@ -134,8 +134,7 @@ a {
 }
 
 .header-dark {
-  background: url("https://cdn.pixabay.com/photo/2015/10/12/14/59/milky-way-984050_960_720.jpg")
-    #444;
+  background: #636363;
   background-size: cover;
   /* padding-bottom:80px; */
 }
