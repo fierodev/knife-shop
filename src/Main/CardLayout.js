@@ -4,8 +4,8 @@ function CardLayout( {name, image, description} ) {
 
   return (
 
-    <div className="card ms-1 mt-1 shadow bg-body rounded" style={{width:"30rem"}}>
-        <div className="card-body ">
+    <div className="card ms-1 mt-1 shadow bg-body rounded" style={{width:"30rem", height:"25rem"}}>
+        <div className="card-body">
             <h5 className="card-title">{name}</h5>
             <img className="w-50" src={image} />
             <p className="card-text">{description}</p>
