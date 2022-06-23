@@ -22,12 +22,19 @@ function Calendar() {
     var lastDayOfMonth = xDay.getDate();
     let lastDayOfPreviouslyMonth = yDay.getDate();
     var gettingDay = yDay.getDay();
+    var gettingLastDay = xDay.getDay();
     
     let numbersOfDates = document.querySelector('.calendar-dates');
     let numbersOfPreviousDate="";
     let numbersOfDate='';
+    let numbersOfLastDate='';
+    let num = 0;
     for(var y=gettingDay; y>=0;y--){
         numbersOfPreviousDate += `<div>${lastDayOfPreviouslyMonth - y}</div>`;
+    };
+
+     for(var x=gettingLastDay; x<6;x++){
+       numbersOfLastDate += `<div>${num +=1}</div>`;
     };
    
 
@@ -39,7 +46,9 @@ function Calendar() {
         };
     };
 
-    let allDays = numbersOfPreviousDate + numbersOfDate;
+    console.log(numbersOfLastDate)
+
+    let allDays = numbersOfPreviousDate + numbersOfDate + numbersOfLastDate;
 
 
     return (

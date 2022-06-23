@@ -1,13 +1,7 @@
-/* * {
-    margin: 0;
-    padding: 0;
-    outline: none;
-} */
 
 div.widget1 {
     font-family: 'Roboto', sans-serif;
     overflow: hidden;
-    /* background: #a8a4a4;   */
     margin-top: 20px; 
     max-height: 300px;
 }
@@ -18,15 +12,13 @@ div.widget {
     height: 125px;
     margin: 60px auto;
     margin-top:-20px;
-    background-color: #fcfdfd;
+    background-color: rgba(245, 241, 241, 0.5);;
     border-radius: 9px;
     padding: 25px;
     padding-right: 30px;
     box-shadow: 0px 31px 35px -26px #080c21;
     
 }
-
-/* div.left-panel {} */
 
 div.date {
     font-size: 14px;
@@ -49,6 +41,7 @@ div.temp {
 }
 
 div.panel {
+    color:red;
     display: inline-block;
 }
 

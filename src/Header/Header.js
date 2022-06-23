@@ -11,7 +11,7 @@ function Header(){
 
     return(
              <div className="header-dark">
-            <nav className="navbar navbar-dark navbar-expand-md navigation-clean-search">
+            <nav className="navbar navbar-dark navbar-expand-md navigation-clean-search"  >
                 <div className="container"><a className="navbar-brand" href="#">Knifes shop</a><button className="navbar-toggler" data-toggle="collapse" data-target="#navcol-1"><span className="sr-only">Toggle navigation</span><span className="navbar-toggler-icon"></span></button>
                     <div className="collapse navbar-collapse" id="navcol-1">
                         <Link to='/newtool' className="nav-item" role="presentation"></Link>
