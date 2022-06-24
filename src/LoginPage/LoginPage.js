@@ -17,6 +17,10 @@ import "../App.css";
   }
 
   return (
+    <div>
+    <div>
+       <a className="btn btn-secondary action-button"  role="button" href="/">To Main Page</a>
+    </div>
     <div className="Login w-25 p-3 m-auto">
       <Form onSubmit={handleSubmit} >
         <Form.Group size="lg" controlId="email">
@@ -45,13 +49,18 @@ import "../App.css";
           />
         </Form.Group>
         <div className="text-center">
-            <Button block="true" size="lg" type="submit" className="w-25 mt-2" disabled={!validateForm()}>
+           <div className=" w-50 p-3 m-auto d-flex justify-content-around">
+            <a className="btn btn-secondary action-button"  role="button" disabled={!validateForm()}>Login</a>
+        </div>
+            {/* <Button block="true" size="lg" type="submit" className="w-25 mt-2" disabled={!validateForm()}>
           Login
-        </Button>
+        </Button> */}
         </div>
         
       </Form>
     </div>
+    </div>
+    
   );
 };
 

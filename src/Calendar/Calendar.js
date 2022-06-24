@@ -46,8 +46,6 @@ function Calendar() {
         };
     };
 
-    console.log(numbersOfLastDate)
-
     let allDays = numbersOfPreviousDate + numbersOfDate + numbersOfLastDate;
 
 

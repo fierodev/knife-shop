@@ -28,8 +28,6 @@ const WeatherAPI = () => {
     // });
 
     const { loading, country, city, temp, date } = useWeather();
-
-    console.log(loading, country, city, temp)
             
 return (
     <div className="widget1">
