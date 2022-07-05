@@ -5,17 +5,13 @@ function Calendar() {
     let date = new Date();
     let month = date.getMonth();
     var now = new Date().toLocaleDateString(); 
-
     const arrayOfMonth = ["January","February","March","April","May","June","July","August","September","October","November","December"];
-    
-    
     var arrayOfDay = ["Su", "Mo", "Tu", "We", "Th", "Fr", "Sa"];
     let daysWeek = document.querySelector('.calendar-days');
     let days='';
     for(var i=0; i<=6;i++){
         days += `<div>${arrayOfDay[i]}</div>`;
     };
-
     var xtoday = new Date();
     var xDay = new Date(xtoday.getFullYear(), xtoday.getMonth()+1, 0);
     var yDay = new Date(xtoday.getFullYear(), xtoday.getMonth(), 0);
@@ -32,12 +28,9 @@ function Calendar() {
     for(var y=gettingDay; y>=0;y--){
         numbersOfPreviousDate += `<div>${lastDayOfPreviouslyMonth - y}</div>`;
     };
-
-     for(var x=gettingLastDay; x<6;x++){
+    for(var x=gettingLastDay; x<6;x++){
        numbersOfLastDate += `<div>${num +=1}</div>`;
     };
-   
-
     for(var i=1; i<=lastDayOfMonth;i++){
         if(i === new Date().getDate() && date.getMonth() === new Date().getMonth()){
             numbersOfDate += `<div style='background-color: rgb(220, 241, 23);'>${i}</div>`;
@@ -45,7 +38,6 @@ function Calendar() {
             numbersOfDate += `<div>${i}</div>`;
         };
     };
-
     let allDays = numbersOfPreviousDate + numbersOfDate + numbersOfLastDate;
 
 

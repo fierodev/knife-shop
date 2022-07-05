@@ -22,7 +22,6 @@ export const useWeather = () => {
     return {
         country: data?.location?.country,
         city: data?.location?.name,
-        // region: data.location.region,
         temp: data?.current?.temp_c,
         date: data?.current?.last_updated,
         loading

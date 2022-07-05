@@ -78,10 +78,15 @@ a {
   color: white;
 }
 
+.rates {
+  background-color: rgb(165, 167, 166);
+  justify-content: center;
+}
+
 .calendar {
   background-color: rgb(165, 167, 166);
   /* justify-content: center; */
-  width: 30rem;
+  /* width: 30rem; */
 }
 
 .calendar-today {
